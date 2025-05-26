@@ -1,0 +1,171 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+header h1 {
+  font-family: Chivo;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(113, 105, 102, 1);
+}
+.menu-btn {
+  margin-left: auto;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-tabs button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.nav-tabs button.active,
+#shortlist-toggle.active {
+  font-weight: bold;
+  color: #222;
+  border-bottom: 2px solid #e27c00;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
+  /* position: relative; */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.card h2 {
+  font-size: 18px;
+  /* margin-bottom: 36px; */
+  font-weight: 700;
+}
+
+.card .stars {
+  color: #000;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.card .desc {
+  font-size: 10px;
+  /* margin: 1.5rem; */
+  margin-bottom: 30px;
+  color: #444;
+  width: 350px;
+  font-weight: 400;
+}
+
+.card .stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 36px;
+  font-weight: bold;
+}
+
+.card .stats div {
+  font-size: 0.85rem;
+}
+
+.card .contact {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.card .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  text-align: right;
+  color: #9c6c00;
+  padding-left: 20px;
+}
+
+.card .actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.action-btn img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.action-btn span {
+  display: block;
+  color: #444;
+}
+
+.card.alt-bg {
+  background-color: #fff7e6;
+}
+
+.card-inner {
+  display: flex;
+  justify-content: center; /* ✅ Keeps things close to center */
+  /* gap: 3rem; ✅ Space between left and actions */
+  max-width: 1000px; /* ✅ Prevents full-width stretching */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+@media (min-width: 1400px) {
+  .card-inner {
+    max-width: 800px;
+  }
+}
