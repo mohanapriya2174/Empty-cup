@@ -26,11 +26,3 @@ This is a responsive web application built as part of the EmptyCup Full Stack As
 
 ---
 
-## 🐳 Docker Support
-
-### 🔹 Run Backend with Docker
-
-```bash
-cd server
-docker build -t emptycup-backend .
-docker run -p 4000:4000 emptycup-backend
